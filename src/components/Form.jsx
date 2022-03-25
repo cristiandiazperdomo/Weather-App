@@ -19,7 +19,7 @@ export const Form = ({ onSubmit, setLocation }) => {
 			</article>
 			<hr className="first-form-hr"/>
 			<footer className="first-form-footer">
-				<p>Creado por Cristian Díaz</p>
+				<p>Creado por Cristian Díaz.</p>
 			</footer>
 		</form>
 	)
