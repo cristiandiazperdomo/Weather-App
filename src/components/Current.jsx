@@ -4,7 +4,7 @@ import '../styles/components/Current.css'
 
 export const Current = ({ current }) => {
 
-	let icon_Weather = "http://openweathermap.org/img/wn/" + `${current.weather[0].icon}` + ".png";
+	let icon_Weather = "https://openweathermap.org/img/wn/" + `${current.weather[0].icon}` + ".png";
 
 	return (
 		<div className="header-current">

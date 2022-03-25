@@ -4,11 +4,13 @@ export const WeatherApi = () => {
 	const [ weatherApiInfo, setWeatherApiInfo ] = useState([]);
 
 	const callWeatherApiData = async location => {
-		let country = `http://api.positionstack.com/v1/forward?access_key=9100cf397464b2d023a00a3fc8fcb431&query=${location}`;
+		let country = `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=fb9ddfc409ad8f8ceafc068457007605`;
 
-		let countryInfo = await (await fetch(country)).json();
+		let countryGeoLocation = await (await fetch(country)).json();
 
-		let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${countryInfo.data[0].latitude}&lon=${countryInfo.data[0].longitude}&appid=fb9ddfc409ad8f8ceafc068457007605`;
+		console.log(countryGeoLocation)
+
+		let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${countryGeoLocation[0].lat}&lon=${countryGeoLocation[0].lon}&appid=fb9ddfc409ad8f8ceafc068457007605`;
 		
 		let weatherApiData = await (await fetch(url)).json();
 

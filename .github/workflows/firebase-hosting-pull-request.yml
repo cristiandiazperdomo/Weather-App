@@ -12,5 +12,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEATHER_APP_9962D }}'
-          projectId: weather-app-9962d
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEATHER_B6DD8 }}'
+          projectId: weather-b6dd8
