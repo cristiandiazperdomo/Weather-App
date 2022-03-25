@@ -1,0 +1,24 @@
+.NotFound {
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.NotFound img {
+	height: 400px;
+	width: 400px;
+}
+
+.NotFound button {
+	background-color: #126B34;
+	padding: .5rem;
+	border: none;
+	color: #fff;
+	
+	transition: padding .5s;
+}
+
+.NotFound button:hover{
+	background-color: green;
+}
