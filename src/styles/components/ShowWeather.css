@@ -1,0 +1,64 @@
+.big-card{
+	display: flex;
+	justify-content: center;
+	padding: 0 4rem;
+
+	background: url(../../img/background.jpg);
+	background-size: 100% 100%;
+	backdrop-filter: blur(1rem);
+	min-height: 100vh; 
+
+}
+.big-card-container{
+	width: 75%;
+	min-height: 100vh;
+}
+.big-card-header {
+	display: flex;
+	justify-content: center;
+
+}
+.card-hours{
+	display: flex;
+}
+
+.hourly {
+	display: flex;
+	overflow-x: hidden !important;
+	scroll-behavior: smooth;
+}
+
+.daily-condition{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	margin: 2rem 0;
+	grid-gap: 2rem !important;
+
+}
+
+.day-icon picture img {
+	margin-right: 1rem;
+}
+
+.scroll {
+	background-color: transparent;
+    border: 0;
+}
+
+.scroll-icon {
+	cursor: pointer;
+	width: 13px;
+	height: 13px;
+	margin-left: -3rem;
+}
+.scroll-icon-left {
+	margin-left: -3rem;
+}
+.scroll-icon-right {
+	margin-right: -6rem;
+}
+
+.scroll-icon:hover {
+	opacity: 50%;
+}

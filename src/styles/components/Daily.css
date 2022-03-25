@@ -1,0 +1,41 @@
+.daily-card{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: hsla(0,0%,100%,.8);
+  
+    padding: 1em 0.9em 1em 0;
+    margin-bottom: 1em;
+    border-radius: 0.5rem;
+}
+.daily-card p, .daily-card h4{
+    color: #000;
+}
+
+.left-side {
+    display: flex;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.right-side p {
+    margin: 0 .5rem;
+}
+
+.right-side p:first-child {
+    color: rgba(0,0,0,.6) !important;
+}
+
+.day-icon img {
+    width: 45px;
+    margin: 0 1rem;
+
+}
+.close-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

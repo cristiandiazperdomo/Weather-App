@@ -1,0 +1,40 @@
+.Header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #126B34;
+
+	padding: .5rem 0;
+}
+.Header-h1 {
+	font-size: 2rem;
+}
+.left-side {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.right-side {
+	display: flex;
+	align-items: flex-end;
+	margin: 0 2rem;
+}
+
+.Header-ul {
+	display: flex;
+	align-items: center;
+}
+
+.Header-ul li {
+	list-style: none;
+	margin: 0 .5rem;
+}
+
+.Header-ul li:last-child {
+	margin: 0  0 0 .5rem;
+}

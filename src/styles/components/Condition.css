@@ -1,0 +1,36 @@
+.condition {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #000;
+}
+
+.condition h4, .condition p {
+    color: #000;
+}
+.card-condition{
+	display: flex;
+    align-items: center;
+    background-color: hsla(0,0%,100%,.8);
+    margin: 0 0 1rem 0;
+    padding: 1em 0.9em;
+    border-radius: 0.5rem;
+    width: 40%;
+    height: 42px;
+}
+.card-condition img{
+	height: 30px !important;
+    width: 30px !important;
+	
+	margin-right: 1rem;    
+}
+.card-condition p {
+	font-size: .75em;
+    opacity: .7;
+}
+.card-condition h4{
+	font-weight: 600;
+    font-size: .9em;
+}
