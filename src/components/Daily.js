@@ -25,7 +25,8 @@ export const Daily = ({ daily }) => {
 				<p>{Math.trunc(day.temp.min - 273.15 ) + "°C"}</p>
 				<p>{Math.trunc(day.temp.max - 273.15 ) + "°C"}</p>
 			</div>
-		</div>)}
+		</div>)
+	}
 	</>
 	)
 

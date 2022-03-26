@@ -1,7 +1,6 @@
 .big-card{
 	display: flex;
 	justify-content: center;
-	padding: 0 4rem;
 
 	background: url(../../img/background.jpg);
 	background-size: 100% 100%;
@@ -10,7 +9,7 @@
 
 }
 .big-card-container{
-	width: 75%;
+	width: 85%;
 	min-height: 100vh;
 }
 .big-card-header {
@@ -27,6 +26,21 @@
 	overflow-x: hidden !important;
 	scroll-behavior: smooth;
 }
+.daily-container {
+
+}
+.condition-container {
+	
+}
+.hours-card-section {
+	display: flex;
+	justify-content: center;
+
+}
+
+.hours-card-div {
+	width: 80%;
+}
 
 .daily-condition{
 	display: grid;
@@ -34,7 +48,7 @@
 
 	margin: 2rem 0;
 	grid-gap: 2rem !important;
-
+	width: 100%;
 }
 
 .day-icon picture img {
@@ -61,4 +75,50 @@
 
 .scroll-icon:hover {
 	opacity: 50%;
+}
+
+@media all and (max-width: 800px) {
+	.hours-card-div {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.hours-card-div {
+		width: 100%;
+	}
+
+	.daily-condition{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+
+		margin: 2rem 0;
+		grid-gap: 2rem !important;
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.hours-card-div {
+		width: 80%;
+	}
+
+	.daily-condition{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+
+		margin: 2rem 0;
+		grid-gap: 2rem !important;
+		width: 100%;
+	}
+	.hours-card-div {
+		width: 100%;
+	}
+
+	.scroll-icon-left {
+    	margin-left: -1.5rem;
+	}
+	.scroll-icon-right {
+    	margin-right: -4.5rem;
+	}
 }
