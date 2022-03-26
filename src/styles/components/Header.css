@@ -8,7 +8,7 @@
 .Header-h1 {
 	font-size: 2rem;
 }
-.left-side {
+.Header .left-side {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,7 +19,7 @@ a {
 	text-decoration: none;
 }
 
-.right-side {
+.Header .right-side {
 	display: flex;
 	align-items: flex-end;
 	margin: 0 2rem;
@@ -28,6 +28,7 @@ a {
 .Header-ul {
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 
 .Header-ul li {
@@ -37,4 +38,16 @@ a {
 
 .Header-ul li:last-child {
 	margin: 0  0 0 .5rem;
+}
+
+@media all and (max-width: 1000px) {
+	.Header{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.right-side {
+		margin: .7rem 0 !important;
+	}
 }

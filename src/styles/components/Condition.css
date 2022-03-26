@@ -1,9 +1,9 @@
 .condition {
-	display: flex;
-    flex-wrap: wrap;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
-
+    grid-gap: 0 .5rem;
     color: #000;
 }
 
@@ -17,7 +17,7 @@
     margin: 0 0 1rem 0;
     padding: 1em 0.9em;
     border-radius: 0.5rem;
-    width: 40%;
+
     height: 42px;
 }
 .card-condition img{

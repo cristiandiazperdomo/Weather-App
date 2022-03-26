@@ -54,3 +54,20 @@
 	font-size: .8rem;
 	padding: 1rem;
 }
+
+@media all and (max-width: 750px) {
+
+	.first-form {
+		width: 280px;
+	}
+
+}
+
+@media all and (max-width: 400px) {
+
+	.first-form {
+		box-shadow: none;
+	}
+
+
+}
