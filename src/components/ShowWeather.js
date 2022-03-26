@@ -31,26 +31,28 @@ export const ShowWeather = () => {
 				<header className="big-card-header">
 					<Current current={weatherApiInfo.current} />
 				</header>
-				<section>
-					<article className="card-hours">
-						<button className="scroll scroll-right" onClick={scrollLeft}>
-							<img className="scroll-icon scroll-icon-left" src={require('../img/flecha-izquierda.png')}/>
-						</button>
-						<article className="hourly">
-							<Hourly hourly={weatherApiInfo.hourly}/>
+				<section className="hours-card-section">
+					<div className="hours-card-div">
+						<article className="card-hours">
+							<button className="scroll scroll-right" onClick={scrollLeft}>
+								<img className="scroll-icon scroll-icon-left" src={require('../img/flecha-izquierda.png')}/>
+							</button>
+							<article className="hourly">
+								<Hourly hourly={weatherApiInfo.hourly}/>
+							</article>
+							<button className="scroll scroll-left" onClick={scrollRight}>
+								<img className="scroll-icon scroll-icon-right" src={require('../img/flecha-derecha.png')}/>
+							</button>
 						</article>
-						<button className="scroll scroll-left" onClick={scrollRight}>
-							<img className="scroll-icon scroll-icon-right" src={require('../img/flecha-derecha.png')}/>
-						</button>
-					</article>
-					<article className="daily-condition">
-						<div>	
-							<Daily daily={weatherApiInfo.daily} />
-						</div>
-						<div>
-							<Condition conditions={weatherApiInfo.current} />
-						</div>
-					</article>
+						<article className="daily-condition">
+							<div className="daily-container">	
+								<Daily daily={weatherApiInfo.daily} />
+							</div>
+							<div className="condition-container">
+								<Condition conditions={weatherApiInfo.current} />
+							</div>
+						</article>
+					</div>
 				</section>
 			</div>
 		</div>

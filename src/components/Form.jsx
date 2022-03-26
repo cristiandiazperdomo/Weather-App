@@ -14,7 +14,7 @@ export const Form = ({ onSubmit, setLocation }) => {
 			</header>
 			<hr className="first-form-hr"/>
 			<article className="first-form-article">
-				<input type="text" placeholder="Ingresa aquí tu país" className="first-form-article-input" onChange={e => setLocation(e.target.value)}/>
+				<input type="text" placeholder="Ingresa aquí tu país o ciudad" className="first-form-article-input" onChange={e => setLocation(e.target.value)}/>
 				<button className="first-form-article-button" type="submit">Enviar</button>
 			</article>
 			<hr className="first-form-hr"/>
