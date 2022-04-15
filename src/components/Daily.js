@@ -5,8 +5,7 @@ import '../styles/components/Daily.css';
 
 export const Daily = ({ daily }) => {
 
-	daily.length = 6;
-
+	daily.length = 5;
 
 	return (
 	<>

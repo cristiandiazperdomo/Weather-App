@@ -5,6 +5,9 @@ import { Hourly } from './Hourly';
 import { Daily } from './Daily';
 import { Condition } from './Condition';
 import { MyContext } from '../context/AppContext';
+import { AirQualityDisplay } from '../components/AirQualityDisplay';
+
+
 import '../styles/components/ShowWeather.css';
 
 export const ShowWeather = () => {
@@ -50,6 +53,9 @@ export const ShowWeather = () => {
 							</div>
 							<div className="condition-container">
 								<Condition conditions={weatherApiInfo.current} />
+								<div className="AirQuality-container">
+									<AirQualityDisplay />
+								</div>
 							</div>
 						</article>
 					</div>
