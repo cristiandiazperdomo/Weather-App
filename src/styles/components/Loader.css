@@ -9,14 +9,14 @@
 .loader-container figure {
 	margin: 0 0 15rem 0;
 }
-@keyframes example {
+@keyframes icon {
   0%   {transform: rotate(00deg);}
   25%  {transform: rotate(90deg);}
   50%  {transform: rotate(180deg);}
   100% {transform: rotate(360deg);}
 }
 .loader-container figure img {
-    animation-name: example;
+    animation-name: icon;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }

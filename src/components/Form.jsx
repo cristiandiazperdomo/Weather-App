@@ -23,5 +23,4 @@ export const Form = ({ onSubmit, setLocation }) => {
 			</footer>
 		</form>
 	)
-
 }

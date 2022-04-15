@@ -19,4 +19,5 @@ export const WeatherApi = () => {
 	return {
 		callWeatherApiData, weatherApiInfo
 	}
+
 }

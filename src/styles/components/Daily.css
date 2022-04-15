@@ -44,7 +44,3 @@
     flex-direction: column;
     justify-content: space-around;
 }
-
-@media all and (max-width: 400px) {
-    
-}

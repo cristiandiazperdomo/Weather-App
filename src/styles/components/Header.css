@@ -50,4 +50,10 @@ a {
 	.right-side {
 		margin: .7rem 0 !important;
 	}
+	.Header .left-side {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem 2rem;
+	}
 }
