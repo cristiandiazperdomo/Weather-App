@@ -1,0 +1,62 @@
+.AirQuality{
+	max-height: 430px;
+	padding: 0.5em 0.8em 1em;
+}
+
+
+
+.AirQuality-top{
+	display: flex;
+	align-items: center;
+
+}
+.inside-doughnut{
+	position: absolute;
+    text-align: center;
+	margin-left: -1rem;
+}
+
+.inside-doughnut p{
+	color: #000;
+}
+
+.inside-doughnut p:first-child{
+	font-weight: 600;
+	font-size: 18px;
+
+	margin-bottom: .3rem;
+}
+
+.inside-doughnut p:last-child{
+	font-weight: 500;
+	font-size: 12px;
+	color: rgba(0, 0, 0, .3);
+}
+
+.AirQuality-title{
+	
+}
+.AirQuality-title h4{
+	font-size: 13px;
+	color: #000;
+	margin-bottom: 0.4em;
+
+}
+.AirQuality-top-left {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AirQuality-top-left canvas{
+	margin-right: 1rem;
+}
+
+.AirQuality-description{
+	
+}
+
+.AirQuality-description p{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 1);
+}
+

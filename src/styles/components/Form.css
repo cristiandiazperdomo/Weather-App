@@ -55,6 +55,10 @@
 	padding: 1rem;
 }
 
+.loader-container {
+	display: none;
+}
+
 @media all and (max-width: 750px) {
 
 	.first-form {

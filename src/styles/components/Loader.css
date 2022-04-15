@@ -1,0 +1,22 @@
+.loader-container {
+	position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+.loader-container figure {
+	margin: 0 0 15rem 0;
+}
+@keyframes example {
+  0%   {transform: rotate(00deg);}
+  25%  {transform: rotate(90deg);}
+  50%  {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+.loader-container figure img {
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}

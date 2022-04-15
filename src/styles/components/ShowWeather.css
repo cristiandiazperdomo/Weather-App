@@ -30,7 +30,9 @@
 
 }
 .condition-container {
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .hours-card-section {
 	display: flex;
@@ -75,6 +77,20 @@
 
 .scroll-icon:hover {
 	opacity: 50%;
+}
+
+/*AIRQUALITY*/
+
+.AirQuality-container {
+	display: flex;
+    justify-content: space-between;
+    background-color: hsla(0,0%,100%,.8);
+    border-radius: 0.5rem;
+}
+
+canvas {
+	height: 90px !important;
+	width: 90px !important;
 }
 
 @media all and (max-width: 800px) {
@@ -122,3 +138,4 @@
     	margin-right: -4.5rem;
 	}
 }
+

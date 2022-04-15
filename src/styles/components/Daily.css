@@ -9,6 +9,10 @@
     border-radius: 0.5rem;
     
 }
+
+.daily-card:last-child{
+    margin: 0;
+}
 .daily-card p, .daily-card h4{
     color: #000;
 }
