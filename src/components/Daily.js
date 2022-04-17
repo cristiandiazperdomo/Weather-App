@@ -9,23 +9,23 @@ export const Daily = ({ daily }) => {
 
 	return (
 	<>
-	{daily.map(day => 
-		<div className="daily-card" key={day.dt}>
-			<div className="left-side">
-				<div className="day-icon">
-					<img src={"http://openweathermap.org/img/wn/" + `${day.weather[0].icon}` + ".png"} alt="" />
+		{daily.map(day => 
+			<div className="daily-card" key={day.dt}>
+				<div className="left-side">
+					<div className="day-icon">
+						<img src={`http://openweathermap.org/img/wn/${day.weather[0].icon}.png`} alt="daily icon" />
+					</div>
+					<div className="close-data">
+						<h4>{moment.unix(day.dt).format('dddd')}</h4>	
+						<p>{Math.trunc(day.temp.day - 273.15 ) + "°C"}</p>	
+					</div>
 				</div>
-				<div className="close-data">
-					<h4>{moment.unix(day.dt).format('dddd')}</h4>	
-					<p>{Math.trunc(day.temp.day - 273.15 ) + "°C"}</p>	
+				<div className="right-side">
+					<p>{Math.trunc(day.temp.min - 273.15 ) + "°C"}</p>
+					<p>{Math.trunc(day.temp.max - 273.15 ) + "°C"}</p>
 				</div>
-			</div>
-			<div className="right-side">
-				<p>{Math.trunc(day.temp.min - 273.15 ) + "°C"}</p>
-				<p>{Math.trunc(day.temp.max - 273.15 ) + "°C"}</p>
-			</div>
-		</div>)
-	}
+			</div>)
+		}
 	</>
 	)
 

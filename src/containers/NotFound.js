@@ -6,7 +6,7 @@ export const NotFound = () => {
 
 	return (
 		<div className="NotFound">
-			<img src={require('../img/404error.png')}/>
+			<img src={require('../img/404error.png')} alt="404 error"/>
 			<Link to="/">
 				<button type="button">Come to the main page</button>
 			</Link>

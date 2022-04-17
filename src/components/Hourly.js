@@ -12,7 +12,7 @@ export const Hourly = ({ hourly }) => {
 			{hourly.map(hours => 
 			<div className="card-hourly" key={hours.dt}>
 				<header className="card-header">
-					<img src={"http://openweathermap.org/img/wn/" + `${hours.weather[0].icon}` + ".png"} alt="" />
+					<img src={`http://openweathermap.org/img/wn/${hours.weather[0].icon}.png`} alt="hours-icon" />
 				</header>
 				<article className="article-temp">
 					<p className="hours-temp">{Math.trunc(hours.temp - 273.15 ) + "°C"}</p>

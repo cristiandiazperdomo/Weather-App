@@ -38,13 +38,13 @@ export const ShowWeather = () => {
 					<div className="hours-card-div">
 						<article className="card-hours">
 							<button className="scroll scroll-right" onClick={scrollLeft}>
-								<img className="scroll-icon scroll-icon-left" src={require('../img/flecha-izquierda.png')}/>
+								<img className="scroll-icon scroll-icon-left" src={require('../img/flecha-izquierda.png')} alt="icon-scroll-left"/>
 							</button>
 							<article className="hourly">
 								<Hourly hourly={weatherApiInfo.hourly}/>
 							</article>
 							<button className="scroll scroll-left" onClick={scrollRight}>
-								<img className="scroll-icon scroll-icon-right" src={require('../img/flecha-derecha.png')}/>
+								<img className="scroll-icon scroll-icon-right" src={require('../img/flecha-derecha.png')} alt="icon-scroll-right"/>
 							</button>
 						</article>
 						<article className="daily-condition">

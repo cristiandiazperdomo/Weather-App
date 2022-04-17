@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import {Chart, ArcElement} from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { MyContext } from '../context/AppContext';
