@@ -10,7 +10,9 @@ import { useInitialState } from '../hooks/useInitialState';
 
 export const App = () => {
 
-	let initialState = useInitialState()
+	const initialState = useInitialState();
+
+	console.log({cantidad: initialState?.weatherApiInfo?.length, boolean: Boolean(initialState?.weatherApiInfo?.length)});
 
 	return (
 		<MyContext.Provider value={initialState}>
@@ -19,7 +21,7 @@ export const App = () => {
 					<Routes>
 						<Route path="*" element={<NotFound/>} />
 						<Route exact path="/" element={<Home />} />
-						<Route exact path="/weather" element={initialState.weatherApiInfo.length === 0 ?  <Navigate to="/" /> : <ShowWeather />} />
+						<Route exact path="/weather" element={initialState?.weatherApiInfo.length == false ? <Navigate to="/" /> : <ShowWeather />} />
 					</Routes>
 				</Layout>
 			</Router>
