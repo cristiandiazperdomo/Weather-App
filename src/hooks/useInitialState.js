@@ -10,7 +10,6 @@ export const useInitialState = () => {
 	const {
 		callWeatherApiData,
 		weatherApiInfo,
-		boolean,
 	} = WeatherApi();
 
 	const {
@@ -21,16 +20,9 @@ export const useInitialState = () => {
 	const onSubmit = async (e, navigate) => {
 		setLoader(true)
 		e.preventDefault();
-		await callWeatherApiData(location);
 		await air(location);
-		setTimeout(() => {
-			if(boolean === true) {
-				navigate('/weather');
-			} else {
-				console.log('no funciono')
-			}
-		}, 0);
-		setLoader(false)
+		await callWeatherApiData(location, navigate);
+		setLoader(false);
 
 	}
 
@@ -40,7 +32,6 @@ export const useInitialState = () => {
 		weatherApiInfo,
 		quality,
 		loader,
-		boolean,
 	}
 
 }
