@@ -10,6 +10,8 @@ export const useInitialState = () => {
 	const {
 		callWeatherApiData,
 		weatherApiInfo,
+		errorModal,
+		setErrorModal,
 	} = WeatherApi();
 
 	const {
@@ -23,7 +25,6 @@ export const useInitialState = () => {
 		await air(location);
 		await callWeatherApiData(location, navigate);
 		setLoader(false);
-
 	}
 
 	return {
@@ -32,6 +33,8 @@ export const useInitialState = () => {
 		weatherApiInfo,
 		quality,
 		loader,
+		errorModal,
+		setErrorModal,
 	}
 
 }

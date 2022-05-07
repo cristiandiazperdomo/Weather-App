@@ -5,9 +5,8 @@ import { Hourly } from './Hourly';
 import { Daily } from './Daily';
 import { Condition } from './Condition';
 import { MyContext } from '../context/AppContext';
-import { AirQualityDisplay } from '../components/AirQualityDisplay';
-
-
+import { AirQualityDisplay } from './AirQualityDisplay';
+ 
 import '../styles/components/ShowWeather.css';
 
 export const ShowWeather = () => {
@@ -17,14 +16,14 @@ export const ShowWeather = () => {
 	const scrollRight = () => {
 		if (document.querySelector(".hourly")) {
 			const hourly = document.querySelector(".hourly");
-			hourly.scrollLeft += 450;
+			hourly.scrollLeft += 200;
 		}
 	};
 
 	const scrollLeft = () => {
 		if (document.querySelector(".hourly")) {
 			const hourly = document.querySelector(".hourly");
-			hourly.scrollLeft -= 450;
+			hourly.scrollLeft -= 200;
 		}
 	};
 

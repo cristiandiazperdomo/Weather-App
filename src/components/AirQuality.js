@@ -5,7 +5,7 @@ export const AirQuality = () => {
 
 	const air = async location => {
 
-		location = location.split(' ').join("")
+		location = location.split(' ').join("");  //IN CASE OF LOCATION WITH SPACES
 
 		let url = `https://api.waqi.info/feed/${location}/?token=2cea00b423221c328c5098449e0fd3a1d5e07388`;
 
