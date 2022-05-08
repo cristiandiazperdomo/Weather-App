@@ -17,9 +17,9 @@ export const App = () => {
 			 <Router>
 				<Layout>
 					<Routes>
-						<Route path="*" element={<NotFound/>} />
+						<Route path="*" element={<NotFound />} />
 						<Route exact path="/" element={<Home />} />
-						<Route exact path="/weather" element={initialState?.weatherApiInfo.length === false ? <Navigate to="/" /> : <ShowWeather />} />
+						<Route exact path="/weather" element={initialState?.weatherApiInfo?.length == 0 ? <Navigate to="/" /> : <ShowWeather />} />
 					</Routes>
 				</Layout>
 			</Router>

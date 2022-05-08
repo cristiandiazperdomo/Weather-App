@@ -1,20 +1,25 @@
 .Header {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-around;
+	align-items: center;
 	background-color: #126B34;
-
 	padding: .5rem 0;
 }
 .Header-h1 {
+	color: #F5F5F5;
 	font-size: 2rem;
+}
+.header-form {
+	display: flex;
 }
 .Header .left-side {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 2rem;
 }
-
+.fill {
+	width: 276px;
+}
 a {
 	text-decoration: none;
 }
@@ -22,7 +27,6 @@ a {
 .Header .right-side {
 	display: flex;
 	align-items: flex-end;
-	margin: 0 2rem;
 }
 
 .Header-ul {
@@ -38,6 +42,10 @@ a {
 
 .Header-ul li:last-child {
 	margin: 0  0 0 .5rem;
+}
+
+.Header-ul li a{
+	color: #F5F5F5;
 }
 
 @media all and (max-width: 1000px) {

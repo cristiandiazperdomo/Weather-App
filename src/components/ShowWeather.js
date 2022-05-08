@@ -6,12 +6,23 @@ import { Daily } from './Daily';
 import { Condition } from './Condition';
 import { MyContext } from '../context/AppContext';
 import { AirQualityDisplay } from './AirQualityDisplay';
+import { Loader } from '../components/Loader';
+import { Alert } from '../components/Alert.js';
  
 import '../styles/components/ShowWeather.css';
 
 export const ShowWeather = () => {
 
-	const { weatherApiInfo } = useContext(MyContext);
+	const {
+		weatherApiInfo,
+		loader,
+		errorModal,
+		setErrorModal,
+	} = useContext(MyContext);
+
+	const closeModal = () => {
+		setErrorModal(false);
+	}
 
 	const scrollRight = () => {
 		if (document.querySelector(".hourly")) {
@@ -29,6 +40,7 @@ export const ShowWeather = () => {
 
 	return (
 		<div className="big-card">
+		{ loader && <Loader /> }
 			<div className="big-card-container">
 				<header className="big-card-header">
 					<Current current={weatherApiInfo.current} />
