@@ -16,14 +16,14 @@ export const ShowWeather = () => {
 	const scrollRight = () => {
 		if (document.querySelector(".hourly")) {
 			const hourly = document.querySelector(".hourly");
-			hourly.scrollLeft += 200;
+			hourly.scrollLeft += 220;
 		}
 	};
 
 	const scrollLeft = () => {
 		if (document.querySelector(".hourly")) {
 			const hourly = document.querySelector(".hourly");
-			hourly.scrollLeft -= 200;
+			hourly.scrollLeft -= 220;
 		}
 	};
 
